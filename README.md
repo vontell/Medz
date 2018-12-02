@@ -13,4 +13,4 @@ Tech used:
 - Google Cloud Enginer + Firebase for text extraction
 - OpenFDA for drug lookup and information
 
-Project Link: TBD
+Project Link: https://yhack2018.hackerearth.com/sprints/yhack-2018/dashboard/8c6728d/submission/
