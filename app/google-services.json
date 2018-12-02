@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "885535997912",
+    "firebase_url": "https://medz-856fc.firebaseio.com",
+    "project_id": "medz-856fc",
+    "storage_bucket": "medz-856fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885535997912:android:86ab522fe22cd375",
+        "android_client_info": {
+          "package_name": "org.vontech.medz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885535997912-66o8ahklno16qstmpc15cu629equpn9o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaOScsGRLWDPzw_vOKvc_wz_fOcTCP19U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

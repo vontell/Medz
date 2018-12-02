@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.vontech.medz.MainActivity">
+
+    <com.otaliastudios.cameraview.CameraView
+        android:id="@+id/cameraView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        app:cardCornerRadius="16dp">
+
+    </com.otaliastudios.cameraview.CameraView>
+
+    <ImageButton
+        android:id="@+id/captureButton"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignBottom="@+id/cameraView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:elevation="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/start"
+        app:srcCompat="@drawable/start" />
+
+    <io.saeid.fabloading.LoadingView
+        android:id="@+id/imageCapturingView"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignBottom="@+id/cameraView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:scaleX="1.27"
+        android:scaleY="1.27"
+        android:visibility="gone"
+        app:mfl_duration="1000" />
+
+    <com.shuhart.stepview.StepView
+        android:id="@+id/scanProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/rounded_back"
+        android:padding="8dp"
+        android:visibility="gone"
+        app:sv_animationType="Line"
+        app:sv_doneCircleColor="#59AD00"
+        app:sv_doneCircleRadius="12dp"
+        app:sv_doneStepLineColor="#59AD00"
+        app:sv_doneStepMarkColor="#ffffff"
+        app:sv_doneTextColor="#000000"
+        app:sv_nextStepLineColor="@android:color/darker_gray"
+        app:sv_nextTextColor="@android:color/black"
+        app:sv_selectedCircleColor="@color/colorPrimary"
+        app:sv_selectedCircleRadius="12dp"
+        app:sv_selectedStepNumberColor="@android:color/white"
+        app:sv_selectedTextColor="@color/colorPrimary"
+        app:sv_stepLineWidth="1dp"
+        app:sv_stepNumberTextSize="12sp"
+        app:sv_stepPadding="4dp"
+        app:sv_stepViewStyle="@style/StepView" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/tutorialBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        app:cardCornerRadius="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8sp"
+            android:padding="16dp"
+            android:text="Tap the button below to scan your prescription. Tap again to stop once you have collected enough information."
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

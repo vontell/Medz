@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    tools:context="org.vontech.medz.OverviewActivity">
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="175dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/header" />
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:lineSpacingExtra="3sp"
+        android:padding="16dp"
+        android:text="There are no prescriptions yet. Click the button below to add one now!"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/newPrescriptionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:layout_margin="12dp"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#56A5CC"
+        fancy:fb_focusColor="#478cae"
+        fancy:fb_iconResource="@drawable/start"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="40dp"
+        fancy:fb_text="Add New Prescription"
+        fancy:fb_textSize="24dp"
+        fancy:fb_textColor="#FFFFFF" />
+
+    <ListView
+        android:id="@+id/medicationListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" />
+
+</LinearLayout>
